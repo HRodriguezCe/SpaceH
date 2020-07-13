@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Luna</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images  /safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav class="nav_moon">
+        <div>
+            <a href="index.html"><h2 class="logo"><img src="images/rocket.png" class="rocket" alt="">SpaceH</h2></a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="recomendaciones.html">Recomendaciones</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container_moon">
+        <div class="description">
+            <div class="image_description">
+                <img src="images/moon.png" alt="">
+            </div>
+            <div class="text">
+                <h3>Luna</h3>
+                <p>Estás a un paso de vivir en nuestro brillante y plateado satelite natural</p>
+                <h1>USD 100</h1>
+            </div>
+        </div>
+
+        <div class="payment">
+            <form class="moon_form" action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XL9EEV5MVXDK4" method="POST">
+                <label for="name">Nombre</label>
+                <br>
+                <input type="text" id="name" required class="data">
+                <br>
+                <label for="mail">E-mail</label>
+                <br>
+                <input type="email" id="mail" required class="data">
+                <br>
+                <label for="phone">Telefono</label>
+                <br>
+                <input type="tel" id="phone" required class="data">
+                <br>
+                <input type="submit" class="main_btn" name="submit" value="Confirmar pago">
+                <br>
+                <div class="pay">
+                    <p>Visualización de caso exitoso y no exitoso</p>
+                    <a href="success.html" class="btn_pay sucess">Efectuado</a>
+                    <a href="fail.html" class="btn_pay fail">No efectuado</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer_moon">
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="mailto:contacto@mail.com">contacto@mail.com</a>
+    </footer>
+</body>
+</html>

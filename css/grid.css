@@ -1,0 +1,25 @@
+[class*=container]{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px 60px auto 60px auto 60px auto;
+    grid-gap: 20px;
+}
+
+.description{
+    /* grid-area: start-row / start-column / end-row / end-column */
+    grid-area: 2 / 3 / span 4 / span 3;
+    padding-top: 0;
+    
+    
+}
+
+.payment{
+    grid-area: 2 / 6 / span 5 / span 5; 
+}
+
+
+.image_description{
+   text-align: center;
+}

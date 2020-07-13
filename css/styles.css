@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500');
+
+:root{
+/* ------------------------- Variables */
+  font-family: 'Orbitron', sans-serif;
+--blue-color: #0B013C;
+--white-color: white;
+--black-color:black;
+--box: 0 0 2px 1px #e6e5e9;
+}
+
+/* -------------------------------------------  */
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: 'Comfortaa';
+  color: var(--white-color);
+  background: var(--blue-color);
+  font-size: .9em;
+  }
+
+.logo{
+  color: var(--white-color);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 8px;
+  display: flex;
+  align-items: center;
+  }
+
+.logo img{
+  width: 40px;
+  transform: rotate(35deg);
+  padding-right: 20px;
+  }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #10044a;
+  align-items: center;
+  padding: 0 10px;
+  max-height: 60px;
+  }
+
+nav ul{
+  display: flex;
+  }
+
+nav li{
+  list-style: none;
+  padding-right: 20px;
+  }
+
+nav a{
+  padding: 10px;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 14px;
+  border: 2px solid transparent;
+  }
+
+nav li a:hover{
+  border: solid 2px #221B6B; 
+  border-radius: 8px;
+  }
+
+  /* ------------------------------------------- MAIN SECTION */
+
+.main{
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 10%;
+  }
+
+/* -------------------------------------------  PRODUCTOS */
+
+.initial{
+  background-image: url("../images/space.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 5% 15% 12% 15%;
+  }
+
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.product{
+  padding: 10px;
+  }
+
+.content{
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: var(--box);
+  color: var(--black-color);
+  }
+
+.image_product{
+  text-align: center;
+  }
+
+.image_product img{
+  width: 21em;
+  }
+
+.image_product:hover{
+  animation: pulse 1s;
+  }
+
+.main_btn{
+  background-color: #7614c7;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white-color);
+  }
+
+.main_btn:hover{
+  background-color: #510e88;
+  }
+
+/* -------------------------------------------  EMPRESAS */
+
+.empresas{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5% 5%;
+  }
+
+.empresa{
+  padding: 25px 40px;
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  }
+
+.image_empresa img{
+  width: 70%;
+  padding-bottom: 20px;
+  }
+
+   /* ------------------line */
+
+hr{
+  opacity: .2;
+  }
+
+   /* -------------------------------------------  LIDERES */
+
+.lideres_tittle{
+  text-align: center;
+  font-size: 26px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.lideres{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 5% 5%;
+  }
+
+.lider{
+  padding: 10px;
+  width: 20%;
+  height: 20%;
+  }
+   
+.content_lider{
+  border-radius: 10px;
+  box-shadow: var(--box);
+  }
+
+.lider img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  }
+
+.lider img:hover{
+  opacity: .8;
+  }
+
+.text{
+  padding: 10px;
+}
+
+/* -------------------------------------------  SALES */
+
+.nav_mars{
+  background-color: rgb(148, 6, 1);
+}
+
+.nav_mars li a:hover{
+  border: solid 2px #c4510f; 
+  border-radius: 8px;
+}
+
+.nav_moon{
+  background-color: rgb(124, 123, 123);
+}
+
+.nav_moon li a:hover{
+  border: solid 2px #5e5c5c; 
+  border-radius: 8px;
+}
+
+.container_mars{
+  background-image: url(../images/marsb.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding: 5% 20% 12% 20%;
+}
+
+.container_moon{
+  background-image: url(../images/moonb.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding: 5% 20% 12% 20%;
+}
+
+.description, .payment{
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: var(--box);
+  padding: 10px;
+}
+
+.payment{
+  padding: 20px;
+  padding-top: 46px
+}
+
+.image_description img{
+  width: 80%;
+}
+
+.data{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.payment .mars_form .main_btn{
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(240, 95, 76);
+}
+
+.payment .mars_form .main_btn:hover{
+  background-color: rgb(231, 71, 49);
+}
+
+.payment .moon_form .main_btn{
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(165, 164, 164);
+}
+
+.payment .moon_form .main_btn:hover{
+  background-color: rgb(204, 201, 200);
+}
+
+.pay {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn_pay{
+  background: var(--black-color);
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.pay p{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.sucess:hover{
+  background: rgb(3, 187, 3);
+}
+
+.fail:hover{
+  background: red
+}
+
+.footer_mars{
+  background-color: rgb(148, 6, 1);
+}
+
+.footer_moon{
+  background-color: rgb(124, 123, 123);
+}
+
+/* -------------------------------------------  SUCCESS FALE */
+
+.back_success{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/stars.jpg);
+  background-size: cover;
+}
+
+.back_fail{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/fail.jpg);
+  background-size: cover;
+}
+
+.content_end{
+  padding-top: 7%;
+  text-align: center;
+}
+
+.content_end a{
+  color: var(--white-color);
+} 
+
+/* -------------------------------------------  TERMS */
+
+.conditions{
+  padding: 5% 15%
+}
+
+.conditions p{
+  font-size: 16px;
+  text-align: justify
+}
+
+/* ------------------------------------------- REC0MENDATIONS */
+
+.recomendations{
+  padding: 5% 15%;
+  text-align: center;
+}
+
+.recomendations p{
+  font-size: 16px;
+  text-align: justify
+}
+
+.recomendations a{
+  text-decoration: none;
+  font-size: 15px
+}
+
+
+/* -------------------------------------------  FAQS */
+
+.faqs{
+  padding: 0 20%
+}
+
+
+/* -------------------------------------------  FOOTER */
+
+footer{
+  background-color: #140657;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer a{
+  padding: 0 1%;
+  text-decoration: none;
+  color: white;
+}

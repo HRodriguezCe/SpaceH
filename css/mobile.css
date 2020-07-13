@@ -1,0 +1,26 @@
+@media (max-width: 600px){
+    .products{
+        display: inherit;
+    }
+
+    .empresas,.lideres{
+        display: inherit;
+        margin-left: 10%;
+    }
+
+    .lider{
+        width: 80%;
+    }
+
+    .product_white{
+        color: white;
+    }
+
+    [class*=container]{
+        display: inherit;
+    }
+
+    .description{
+        margin-bottom: 30px;
+    }
+}
